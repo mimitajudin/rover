@@ -1,0 +1,118 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+.flex{
+  display: flex;
+  
+}
+
+.rover-header-container{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.rover-header-left{
+  
+}
+.rover-header-image{
+  float: left;
+  padding: 18px;
+}
+
+
+.menu{
+  float: left;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.rover-header-right-mobile{
+  display: none;
+}
+
+.rover-hero-container{
+  position: relative;
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 45px;
+  padding-top: 100px;
+  color: #66727c;
+}
+
+.rover-button{
+  text-align: center;
+  background-color: #14a96d;
+  display: block;
+  padding: 15px;
+  width: 30%;
+  color: white;
+  border-style: 1px solid black;
+}
+
+.rover-hero-float{
+  text-align: center;
+  border-style: 1px solid black;
+  position: absolute;
+  float: left;
+  background-color: white;
+  top: 50px;
+  left: 40px;
+  padding: 15px;
+  width: 350px;
+
+}
+
+.rover-button rover-cta-mobile{
+  text-align: center;
+  background-color: #14a96d;
+  display: block;
+  padding: 15px;
+  width: 30%;
+  color: white;
+  border-style: 1px solid black;
+}
+
+
+.rover-middle-section h2{
+text-align: center;
+}
+@media only screen and (max-width: 768px){
+.rover-header-right-mobile{
+  float: right;
+}
+
+.menu{
+  display: none;
+}
+
+.rover-header-right{
+  display: none;
+}
+}
